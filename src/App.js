@@ -73,7 +73,7 @@ const App = () => {
       <div className="container">
       <Routes>
           <Route path="/about" element={<About mode={mode}/>}></Route>
-          <Route path="/" element={<UtileForm heading = "Try TextUtils - word counter, character counter, remove extra spaces" mode={mode} showAlert={showAlert}/>}> </Route>
+          <Route path="/" element={<UtileForm heading = "Try TextUtils - word counter, character counter, remove extra spaces, remove special character, reverse text" mode={mode} showAlert={showAlert}/>}> </Route>
       </Routes>
       </div>
     </Router>  
