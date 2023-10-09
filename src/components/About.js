@@ -7,20 +7,25 @@ const About = (props) => {
   let mystyle = {
     color:props.mode === '#111439' ? 'white' : 'black',
     backgroundColor: props.mode === '#111439' ?'#111439' : 'white',
+    fontFamily: 'serif',
+    border:'none'
   }
+
    
   return (
     <div className="container" style={mystyle}>
-      <h1>About Us</h1>  
-      <div className="accordion" id="accordionExample">
-        <div className="accordion-item">
+      <h1>About Us</h1> 
+      <div className="About_details" style={{fontFamily:'serif'}}>
+      <strong>TextUtils</strong> is a web-based text utility application that offers a range of text manipulation and analysis tools. With TextUtils, users can easily convert text to Uppercase and Lowercase, Copy Sentences,Clear the Text,Remove Special Character, Reverse Text,count words and Characters,  Remove extra spaces, and even estimate how many minutes it takes to read a given text.      </div>
+      <div className="accordion" style={{marginTop: '16px'}} id="accordionExample">
+        <div className="accordion-item" style={mystyle}>
           <h2 className="accordion-header">
             <button
-              className="accordion-button"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapseOne"
             >
               <strong>Analyze Your text</strong>
@@ -28,7 +33,7 @@ const About = (props) => {
           </h2>
           <div
             id="collapseOne"
-            className="accordion-collapse collapse show"
+            className="accordion-collapse collapse "
             data-bs-parent="#accordionExample"
           >
             <div className={`accordion-body border-${props.mode==='#111439'?'2px solid light':'none'}`} style={mystyle}>

@@ -3,11 +3,19 @@
     font-size: 25px;
  }
 
-.button{
-   display: flex;
-   gap: 15px;
-}
+ button {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   flex: 1; /* Allow buttons to grow equally within the container */
+   margin: 5px; /* Add some margin between buttons */
+ }
 
+.button-container {
+   display: flex;
+   flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+   max-width: 100%; /* Set a maximum width for the container */
+ }
 
 .theme{
    position: relative;
